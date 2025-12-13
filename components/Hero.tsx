@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           />
           
           <p className="text-lg md:text-xl text-gray-300 mb-8">
-            CSE Undergrad | Caplin Point Laboratories Intern | Ex - Valeo Intern
+            CSE Undergraduate | Caplin Point Laboratories Intern | Ex - Valeo Intern
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center md:justify-start">
