@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <p>&copy; {currentYear} Samritha Shree R. All rights reserved.</p>
         <SocialIcons links={SOCIAL_LINKS} iconSize="1.8em" className="order-first md:order-none" />
         <p className="text-sm">
-          My First Deployed Project - Built with <span className="text-green-400">React</span> &amp;{' '}
+          Built with <span className="text-green-400">React</span> &amp;{' '}
           <span className="text-blue-400">Tailwind CSS</span>
         </p>
       </div>
