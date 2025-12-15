@@ -80,7 +80,7 @@ jobs :
           git add .
           git commit -m "Deploy build"
           git branch -M main 
-          git push https://${{ secrets.GH_PAGES_TOKEN }}@github.com/samrithashree.github.io.git main --force
+          git push https://${{ secrets.GH_PAGES_TOKEN }}@github.com/SamrithaShree/SamrithaShree.github.io main --force
 
       - name : Deployment Complete
         run : echo "Deployed to GitHub Pages Successfully!"
