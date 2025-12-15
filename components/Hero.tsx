@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
         <div className="text-center md:text-left">
           <p className="text-xl md:text-2xl text-gray-400 mb-4">Hello, I'm</p>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
-            Samritha Shree R
+            Samritha Shree 
           </h1>
           
           <TypeAnimation
