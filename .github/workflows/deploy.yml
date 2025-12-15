@@ -73,8 +73,8 @@ jobs :
           
       - name : Commit and Push changes
         run : |
-          git config --global SamrithaShree "github-actions[bot]" 
-          git config --global iamsamraja1111@gmail.com "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]" 
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Deploy build"
           git push https://${{ secrets.GH_PAGES_TOKEN }}@github.com/SamrithaShree.github.io.git main --force
