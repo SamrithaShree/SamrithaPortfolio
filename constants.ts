@@ -69,10 +69,10 @@ export const SKILLS = {
 export const PROJECTS = [
   {
     title: 'Digital Learning Platform for Rural Education',
-    description: 'Full-stack Progressive Web App for Smart India Hackathon 2025. Provides offline-first education for 10,000 rural students with multilingual support (5 languages) and intelligent caching.',
-    image: 'https://picsum.photos/400/300?random=1',
+    description: 'Full-stack Progressive Web App for Smart India Hackathon 2025. Provides offline-first education for 10,000 rural students with multilingual support (3 languages) and intelligent caching.',
+    image: './assests/projects/DigitalLearning.png',
     techStack: ['React', 'Django', 'SQLite', 'IndexedDB'],
-    githubLink: 'https://github.com/SamrithaShree/digital-learning-platform'
+    githubLink: 'https://github.com/SamrithaShree/digital_learning'
   },
   {
     title: 'Customer Churn Prediction (Kaggle 1st Place)',
