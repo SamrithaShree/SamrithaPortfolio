@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionWrapper from './SectionWrapper';
-import UniversityImage from '../assets/images/University.jpg';
+import UniversityImage from '/images/University.jpg';
 
 const About: React.FC = () => {
   return (

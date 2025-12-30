@@ -4,7 +4,7 @@ import Button from './Button';
 import SocialIcons from './SocialIcons';
 import { SOCIAL_LINKS } from '../constants';
 import SectionWrapper from './SectionWrapper';
-import profileImage from '../assets/images/Profile.jpeg';
+import profileImage from '/images/Profile.jpeg';
 
 const Hero: React.FC = () => {
   return (
