@@ -70,16 +70,9 @@ export const PROJECTS = [
   {
     title: 'Digital Learning Platform for Rural Education',
     description: 'Full-stack Progressive Web App for Smart India Hackathon 2025. Provides offline-first education for 10,000 rural students with multilingual support (3 languages) and intelligent caching.',
-    image: 'assets/projects/DigitalLearning.png',
+    image: './assets/projects/DigitalLearning.png',
     techStack: ['React', 'Django', 'SQLite', 'IndexedDB'],
     githubLink: 'https://github.com/SamrithaShree/digital_learning'
-  },
-  {
-    title: 'Customer Churn Prediction (Kaggle 1st Place)',
-    description: 'Secured 1st Place Public Leaderboard & 2nd Place Private Leaderboard in private Kaggle competition. Built Neural Networks and Transformers on 10,000-record datasets.',
-    image: 'https://picsum.photos/400/300?random=2',
-    techStack: ['Python', 'NumPy', 'Pandas', 'Scikit-learn', 'Neural Networks', 'Transformers'],
-    githubLink: 'https://github.com/SamrithaShree/customer-churn-prediction'
   },
   {
     title: 'Portfolio Website with CICD Pipeline',
@@ -110,47 +103,12 @@ export const PROJECTS = [
     githubLink: 'https://github.com/SamrithaShree/ngo-connect'
   },
   {
-    title: 'HCI Research: Human-Computer Interfaces',
-    description: 'NPTEL Elite Certificate project (Top 1/5,421). Empirical research study on Design & Implementation of Human-Computer Interfaces with published findings.',
-    image: 'https://picsum.photos/400/300?random=7',
-    techStack: ['HCI Research', 'Usability Testing', 'UI/UX Design'],
-    githubLink: 'https://github.com/SamrithaShree/hci-research'
-  },
-  {
-    title: 'Mini Shell (Operating Systems)',
-    description: 'Simplified UNIX shell implementation demonstrating process management, I/O redirection, and piping. Core Operating Systems coursework project.',
-    image: 'https://picsum.photos/400/300?random=8',
-    techStack: ['C', 'Linux', 'System Calls', 'Process Management'],
-    githubLink: 'https://github.com/SamrithaShree/mini-shell'
-  },
-  {
     title: 'Recommendation System (ML Project)',
     description: 'Built hybrid recommendation engine using SVD, Neural Collaborative Filtering (NCF), XGBoost, and LightGBM. Academic ML coursework demonstrating advanced recommender systems.',
     image: 'https://picsum.photos/400/300?random=9',
     techStack: ['Python', 'SVD', 'NCF', 'XGBoost', 'LightGBM'],
     githubLink: 'https://github.com/SamrithaShree/recommendation-system'
   },
-  {
-    title: 'Google Apps Script Automation Tools',
-    description: 'Valeo internship project: Auto-email sender + calendar event generator linked to Google Sheets. Interactive Looker Studio training module for 50 users.',
-    image: 'https://picsum.photos/400/300?random=10',
-    techStack: ['Google Apps Script', 'Google Sheets', 'Looker Studio'],
-    githubLink: 'https://github.com/SamrithaShree/google-apps-script-tools'
-  },
-  {
-    title: 'AWS Cloud Infrastructure Automation',
-    description: 'Caplin Point internship: Automated CICD pipelines, AWS EC2 configuration, secure SFTP deployments using GitHub Actions and CLI tools.',
-    image: 'https://picsum.photos/400/300?random=11',
-    techStack: ['AWS EC2', 'S3', 'GitHub Actions', 'SFTP', 'DevOps'],
-    githubLink: 'https://github.com/SamrithaShree/aws-infrastructure'
-  },
-  {
-    title: 'Competitive Programming Solutions',
-    description: '200+ LeetCode problems solved (39-day streak). Focus on Arrays, Strings, Trees, Graphs, DP, with Python implementations.',
-    image: 'https://picsum.photos/400/300?random=12',
-    techStack: ['Python', 'LeetCode', 'Data Structures', 'Algorithms'],
-    githubLink: 'https://leetcode.com/samrithashree/'
-  }
 ];
 
 // --- Experience/Learning Section ---
