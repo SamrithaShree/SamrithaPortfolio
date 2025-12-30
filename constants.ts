@@ -37,7 +37,7 @@ export const SOCIAL_LINKS = [
 export const SKILLS = {
   'Core': [
     { name: 'Data Structures & Algorithms', icon: '🧑‍💻' }, // Using emoji for generic concepts
-    { name: 'Problem Solving', icon: '🧠' },
+    { name: 'Problem Solving Capacity', icon: '🧠' },
   ],
   'Languages': [
     { name: 'Python', icon: SiPython },
