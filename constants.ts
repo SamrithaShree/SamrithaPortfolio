@@ -68,26 +68,89 @@ export const SKILLS = {
 // --- Projects Section ---
 export const PROJECTS = [
   {
-    title: 'Academic Project: Mini Shell',
-    description: 'A simplified UNIX shell implementation in C, demonstrating process management, I/O redirection, and piping. Developed as part of an Operating Systems coursework.',
-    image: 'https://picsum.photos/400/300?random=1', // Placeholder image
-    techStack: ['C', 'Linux', 'System Calls'],
-    githubLink: 'https://github.com/your-github/mini-shell', // Customize
+    title: 'Digital Learning Platform for Rural Education',
+    description: 'Full-stack Progressive Web App for Smart India Hackathon 2025. Provides offline-first education for 10,000 rural students with multilingual support (5 languages) and intelligent caching.',
+    image: 'https://picsum.photos/400/300?random=1',
+    techStack: ['React', 'Django', 'SQLite', 'IndexedDB'],
+    githubLink: 'https://github.com/SamrithaShree/digital-learning-platform'
   },
   {
-    title: 'Learning Project: This Portfolio Website',
-    description: 'My first deployed project! A responsive portfolio built from scratch to showcase skills in React and Tailwind CSS. Focus on clean UI/UX and modern development practices.',
-    image: 'https://picsum.photos/400/300?random=2', // Placeholder image
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    githubLink: 'https://github.com/your-github/portfolio', // Customize
+    title: 'Customer Churn Prediction (Kaggle 1st Place)',
+    description: 'Secured 1st Place Public Leaderboard & 2nd Place Private Leaderboard in private Kaggle competition. Built Neural Networks and Transformers on 10,000-record datasets.',
+    image: 'https://picsum.photos/400/300?random=2',
+    techStack: ['Python', 'NumPy', 'Pandas', 'Scikit-learn', 'Neural Networks', 'Transformers'],
+    githubLink: 'https://github.com/SamrithaShree/customer-churn-prediction'
   },
   {
-    title: 'Machine Learning Assignment: Image Classifier',
-    description: 'Developed a convolutional neural network (CNN) to classify images using TensorFlow and Keras. Explored different architectures and hyperparameter tuning for optimal performance.',
-    image: 'https://picsum.photos/400/300?random=3', // Placeholder image
-    techStack: ['Python', 'TensorFlow', 'Keras', 'Jupyter Notebook'],
-    githubLink: 'https://github.com/your-github/ml-image-classifier', // Customize
+    title: 'Portfolio Website with CICD Pipeline',
+    description: 'Responsive portfolio with automated CICD pipelines via GitHub Actions, deployed to AWS S3 & GitHub Pages. Reduced deployment time by 80% through DevOps automation.',
+    image: 'https://picsum.photos/400/300?random=3',
+    techStack: ['React', 'Tailwind CSS', 'AWS S3', 'GitHub Actions', 'CICD'],
+    githubLink: 'https://github.com/SamrithaShree/portfolio-website' // Your main portfolio repo
   },
+  {
+    title: 'ThinkFirst AI Socratic Learning Assistant',
+    description: 'GDG Hackathon project: AI-powered learning platform using Gemini API that provides context-aware hints instead of direct answers, following Socratic methodology.',
+    image: 'https://picsum.photos/400/300?random=4',
+    techStack: ['React', 'Firebase', 'Gemini API', 'Prompt Engineering'],
+    githubLink: 'https://github.com/SamrithaShree/thinkfirst-ai'
+  },
+  {
+    title: 'C Data Structures & Algorithms Lab',
+    description: '12 modular programs implementing List, Queue, Tree, Hash, Graph ADTs with core algorithms (DFS, BFS, Dijkstra, Prim, Kruskal, AVL trees) using clean OOP architecture.',
+    image: 'https://picsum.photos/400/300?random=5',
+    techStack: ['C', 'STL', 'Graph Algorithms', 'AVL Trees'],
+    githubLink: 'https://github.com/SamrithaShree/c-data-structures-lab'
+  },
+  {
+    title: 'NGO Connect Platform',
+    description: 'Full-stack platform to help non-profits streamline operations. Built during Science Seekers Ideathon (3rd Place). Demonstrates social impact engineering.',
+    image: 'https://picsum.photos/400/300?random=6',
+    techStack: ['React', 'Django', 'PostgreSQL', 'AWS'],
+    githubLink: 'https://github.com/SamrithaShree/ngo-connect'
+  },
+  {
+    title: 'HCI Research: Human-Computer Interfaces',
+    description: 'NPTEL Elite Certificate project (Top 1/5,421). Empirical research study on Design & Implementation of Human-Computer Interfaces with published findings.',
+    image: 'https://picsum.photos/400/300?random=7',
+    techStack: ['HCI Research', 'Usability Testing', 'UI/UX Design'],
+    githubLink: 'https://github.com/SamrithaShree/hci-research'
+  },
+  {
+    title: 'Mini Shell (Operating Systems)',
+    description: 'Simplified UNIX shell implementation demonstrating process management, I/O redirection, and piping. Core Operating Systems coursework project.',
+    image: 'https://picsum.photos/400/300?random=8',
+    techStack: ['C', 'Linux', 'System Calls', 'Process Management'],
+    githubLink: 'https://github.com/SamrithaShree/mini-shell'
+  },
+  {
+    title: 'Recommendation System (ML Project)',
+    description: 'Built hybrid recommendation engine using SVD, Neural Collaborative Filtering (NCF), XGBoost, and LightGBM. Academic ML coursework demonstrating advanced recommender systems.',
+    image: 'https://picsum.photos/400/300?random=9',
+    techStack: ['Python', 'SVD', 'NCF', 'XGBoost', 'LightGBM'],
+    githubLink: 'https://github.com/SamrithaShree/recommendation-system'
+  },
+  {
+    title: 'Google Apps Script Automation Tools',
+    description: 'Valeo internship project: Auto-email sender + calendar event generator linked to Google Sheets. Interactive Looker Studio training module for 50 users.',
+    image: 'https://picsum.photos/400/300?random=10',
+    techStack: ['Google Apps Script', 'Google Sheets', 'Looker Studio'],
+    githubLink: 'https://github.com/SamrithaShree/google-apps-script-tools'
+  },
+  {
+    title: 'AWS Cloud Infrastructure Automation',
+    description: 'Caplin Point internship: Automated CICD pipelines, AWS EC2 configuration, secure SFTP deployments using GitHub Actions and CLI tools.',
+    image: 'https://picsum.photos/400/300?random=11',
+    techStack: ['AWS EC2', 'S3', 'GitHub Actions', 'SFTP', 'DevOps'],
+    githubLink: 'https://github.com/SamrithaShree/aws-infrastructure'
+  },
+  {
+    title: 'Competitive Programming Solutions',
+    description: '200+ LeetCode problems solved (39-day streak). Focus on Arrays, Strings, Trees, Graphs, DP, with Python implementations.',
+    image: 'https://picsum.photos/400/300?random=12',
+    techStack: ['Python', 'LeetCode', 'Data Structures', 'Algorithms'],
+    githubLink: 'https://leetcode.com/samrithashree/'
+  }
 ];
 
 // --- Experience/Learning Section ---
