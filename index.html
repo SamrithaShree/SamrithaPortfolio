@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samritha Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for aesthetics */
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #111827; /* Tailwind gray-900 */
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #34d399; /* Tailwind green-400 */
+          border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #10b981; /* Tailwind green-500 */
+      }
+      /* Global CSS variable for fixed navbar height for scroll offsetting */
+      :root {
+          --navbar-height: 72px; /* Estimated height of Navbar with py-4, adjust if Navbar height changes */
+      }
+      /* Styles for active navigation link (controlled by JS since react-scroll is removed) */
+      .navbar-link.active {
+          color: #34d399; /* Tailwind green-400 */
+          border-bottom: 2px solid #34d399;
+          padding-bottom: 2px;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-icons/fa": "https://esm.sh/react-icons@5.0.1/fa?deps=react@18.2.0",
+    "react-icons/si": "https://esm.sh/react-icons@5.0.1/si?deps=react@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react-icons/": "https://esm.sh/react-icons@^5.5.0/",
+    "react-icons": "https://esm.sh/react-icons@^5.5.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-C5a-5yEG.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+    <div id="root"></div>
+</body>
+</html>
