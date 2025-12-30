@@ -70,7 +70,7 @@ export const PROJECTS = [
   {
     title: 'Digital Learning Platform for Rural Education',
     description: 'Full-stack Progressive Web App for Smart India Hackathon 2025. Provides offline-first education for rural students with multilingual support (3 languages) and intelligent caching.',
-    image: '/assets/projects/DigitalLearning.png',
+    image: '/projects/DigitalLearning.png',
     techStack: ['React', 'Django', 'SQLite', 'IndexedDB'],
     githubLink: 'https://github.com/SamrithaShree/digital_learning'
   },
