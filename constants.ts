@@ -114,53 +114,23 @@ export const PROJECTS = [
 // --- Experience/Learning Section ---
 export const EXPERIENCE_TIMELINE = [
   {
-    title: 'Valeo India Pvt Ltd - Software Internship',
-    mode: 'Onsite',
-    date: 'June 2025 - July 2025',
-    description: 'Collaborated in a team to develop an innovative software solution for a real-world problem statement. Gained practical experience in rapid prototyping, teamwork, and presenting technical ideas under pressure.',
-  },
+  title: 'Caplin Point Laboratories - Cloud Engineering Intern',
+  mode: 'Onsite',
+  date: 'December 2025',
+  description: 'Implemented CI/CD pipelines using GitHub Actions to automate portfolio deployment to AWS S3 and GitHub Pages, reducing deployment time by 80%. Deployed and configured AWS EC2 instances with secure SFTP file transfers using FileZilla and CLI tools. Gained hands-on experience with DevOps practices including AWS cloud services, version control integration, and infrastructure automation.',
+},
   {
-    title: 'Network Geeks - Data Science Internship',
-    mode: 'Remote',
-    date: 'June 2025 - July 2025',
-    description: 'Collaborated in a team to develop an innovative software solution for a real-world problem statement. Gained practical experience in rapid prototyping, teamwork, and presenting technical ideas under pressure.',
-  },
-  {
-    title: 'Caplin Point Laboratories - Software Internship',
-    mode: 'Onsite',
-    date: 'December 2025 - Present',
-    description: 'Collaborated in a team to develop an innovative software solution for a real-world problem statement. Gained practical experience in rapid prototyping, teamwork, and presenting technical ideas under pressure.',
-  },
-  {
-    title: 'Smart India Hackathon Participant',
-    date: 'March 2023',
-    description: 'Collaborated in a team to develop an innovative software solution for a real-world problem statement. Gained practical experience in rapid prototyping, teamwork, and presenting technical ideas under pressure.',
-  },
-  {
-    title: 'Coursework: Operating Systems',
-    date: 'August 2023 - December 2023',
-    description: 'Deep dived into processes, threads, memory management, and file systems. Implemented a mini shell, CPU scheduling algorithms, and studied synchronization primitives.',
-  },
-  {
-    title: 'Coursework: Data Structures & Algorithms',
-    date: 'January 2023 - May 2023',
-    description: 'Mastered fundamental data structures like arrays, linked lists, trees, and graphs, alongside essential algorithms for sorting, searching, and graph traversal. Applied these concepts to solve complex problems.',
-  },
-  {
-    title: 'Coursework: Machine Learning Fundamentals',
-    date: 'January 2024 - May 2024',
-    description: 'Learned core ML concepts including supervised/unsupervised learning, model evaluation, and common algorithms (linear regression, decision trees, neural networks). Applied Python libraries like Scikit-learn and TensorFlow.',
-  },
-  {
-    title: 'Self-Learning: React & Modern Frontend',
-    date: 'Ongoing since July 2023',
-    description: 'Independently learning React, TypeScript, and modern frontend frameworks like Next.js and styling with Tailwind CSS. Focused on building responsive, interactive user interfaces and understanding component-based architecture.',
-  },
-  {
-    title: 'Self-Learning: Docker & Cloud Platforms (GCP)',
-    date: 'Ongoing since January 2024',
-    description: 'Exploring containerization with Docker to streamline development workflows and deployment. Gaining foundational knowledge in Google Cloud Platform (GCP) for deploying web applications and managing cloud resources.',
-  },
+  title: 'Valeo India Pvt Ltd - Information Systems Intern',
+  mode: 'Onsite',
+  date: 'June 2025 - July 2025',
+  description: 'Developed automation tools using Google Apps Script to streamline workflows, including an auto-email sender and calendar event generator. Created an interactive training module on Google Looker Studio for 50 users, improving training efficiency by 40%. Completed certifications in AppSheet for no-code development and RPA with Automation Anywhere.',
+},
+{
+  title: 'NetworkGeek - Data Science Intern',
+  mode: 'Remote',
+  date: 'June 2025 - July 2025',
+  description: 'Secured 1st place on Public Leaderboard and 2nd place on Private Leaderboard in a Kaggle Customer Churn Prediction competition. Built machine learning models including Neural Networks and Transformers using Python, NumPy, Pandas, and Scikit-learn on datasets with 10,000+ records.',
+},
 ];
 
 // --- Contact Section ---

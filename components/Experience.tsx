@@ -6,7 +6,7 @@ import { EXPERIENCE_TIMELINE } from '../constants';
 
 const Experience: React.FC = () => {
   return (
-    <SectionWrapper id="experience" title="My Journey & Learning">
+    <SectionWrapper id="experience" title="Work Experience">
       <p className="text-lg text-gray-300 text-center mb-12 max-w-2xl mx-auto">
         Here's a look at my key experiences and learning milestones,
         focusing on the skills I've gained and the projects I've tackled along the way.
