@@ -10,7 +10,7 @@
 
 **A modern, responsive portfolio website showcasing projects, skills, and experience with automated CI/CD deployment**
 
-[Live Demo](https://samrithashree.github.io) • [Contact](mailto:samrithashree23@gmail.com) • [LinkedIn](https://www.linkedin.com/in/samritha-shree-r/)
+[Live Demo](https://d3dgt8yim8e9z3.cloudfront.net) • [Contact](mailto:samrithashree23@gmail.com) • [LinkedIn](https://www.linkedin.com/in/samritha-shree-r/)
 
 </div>
 
@@ -186,15 +186,6 @@ The GitHub Actions workflow (`.github/workflows/deploy.yml`) automatically:
    ```
 
 2. **GitHub Pages**: Enable in repository settings → Pages → Source: `gh-pages` branch
-
----
-
-## Performance Metrics
-
-- **Lighthouse Score**: 95+ (Performance)
-- **Mobile-First**: Responsive breakpoints
-- **Accessibility**: WCAG AA compliant
-- **Load Time**: < 2s (optimized assets)
 
 ---
 
