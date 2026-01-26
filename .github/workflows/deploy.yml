@@ -1,4 +1,4 @@
-name : Deploy to AWS S3,Cloudfront and GitHub Pages
+name : Deploy to AWS and GitHub Pages
 on :
   push :
     branches :
@@ -63,6 +63,9 @@ jobs :
   deploy-gh-pages :
     runs-on : ubuntu-latest
     needs : build
+
+    permissions:
+      contents: write
     
     steps :
       - name : Download Artifact
@@ -73,14 +76,16 @@ jobs :
           
       - name : Commit and Push changes
         run : |
-          cd dist
-          git init
+          rm -rf pages-repo
+          git clone https://x-access-token:${GH_TOKEN}@github.com/SamrithaShree/SamrithaShree.github.io.git pages-repo
+          rm -rf pages-repo/*
+          cp -r dist/* pages-repo/
+          cd pages-repo
           git config --global user.name "github-actions[bot]" 
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Deploy build"
-          git branch -M main 
-          git push https://${{ secrets.GH_PAGES_TOKEN }}@github.com/SamrithaShree/SamrithaShree.github.io main --force
+          git commit -m "Deploy from SamrithaPortfolio" || echo "No changes to commit"
+          git push origin main
 
       - name : Deployment Complete
         run : echo "Deployed to GitHub Pages Successfully!"
