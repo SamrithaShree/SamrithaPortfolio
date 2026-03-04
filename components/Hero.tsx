@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
 
           <TypeAnimation
             sequence={[
-              'CSE Student',
+              'CS Student',
               2000,
               'Cloud & DevOps Explorer',
               2000,
