@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
 
           <TypeAnimation
             sequence={[
-              'CS Student',
+              'CSE Student',
               2000,
               'Cloud & DevOps Explorer',
               2000,
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           />
 
           <p className="text-lg md:text-xl text-gray-300 mb-8">
-            CSE Undergraduate | Ex - Caplin Point Laboratories Intern | Ex - Valeo Intern
+            CS Undergraduate | Ex - Caplin Point Laboratories Intern | Ex - Valeo Intern
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center md:justify-start">
