@@ -14,12 +14,12 @@ const Hero: React.FC = () => {
         <div className="text-center md:text-left">
           <p className="text-xl md:text-2xl text-gray-400 mb-4">Hello, I'm</p>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
-            Samritha Shree 
+            Samritha Shree
           </h1>
-          
+
           <TypeAnimation
             sequence={[
-              'CS Student',
+              'CSE Student',
               2000,
               'Cloud & DevOps Explorer',
               2000,
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
             repeat={Infinity}
             className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6"
           />
-          
+
           <p className="text-lg md:text-xl text-gray-300 mb-8">
             CSE Undergraduate | Ex - Caplin Point Laboratories Intern | Ex - Valeo Intern
           </p>
