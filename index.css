@@ -89,6 +89,20 @@ h1, h2, h3, h4, h5, h6 {
   100% { transform: translateX(100%); }
 }
 
+@keyframes scan-line {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(1000%); opacity: 0; }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.animate-scan-line {
+  animation: scan-line 4s linear infinite;
+}
+
 .animate-bounce-subtle {
   animation: bounce-subtle 3s infinite;
 }
