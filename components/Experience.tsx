@@ -6,31 +6,27 @@ import { EXPERIENCE_TIMELINE } from '../constants';
 
 const Experience: React.FC = () => {
   return (
-    <SectionWrapper id="experience" title="Work Experience">
-      <p className="text-lg text-gray-300 text-center mb-12 max-w-2xl mx-auto">
-        Here's a look at my key experiences and learning milestones,
-        focusing on the skills I've gained and the projects I've tackled along the way.
-      </p>
-      <div className="relative mx-auto max-w-3xl">
-        {/* Central timeline line for desktop */}
-        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-0.5 bg-gray-700 h-full"></div>
+    <SectionWrapper id="experience" title="Career Odyssey">
+      <div className="relative mx-auto max-w-4xl py-20">
+        {/* Central timeline line */}
+        <div className="absolute left-[8px] md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-white/10 to-transparent"></div>
 
-        <div className="flex flex-col items-center md:items-stretch">
+        <div className="flex flex-col space-y-4">
           {EXPERIENCE_TIMELINE.map((item, index) => (
             <TimelineItem
               key={index}
               {...item}
-              isLeft={index % 2 === 0} // Alternate left/right for visual appeal on desktop
+              isLeft={index % 2 === 0}
             />
           ))}
         </div>
       </div>
-      <p
-        className="text-lg text-gray-400 text-center mt-12 max-w-2xl mx-auto"
-        // Removed Framer Motion initial, whileInView, viewport, transition props
-      >
-        Each experience, whether a hackathon or self-study, contributes to my evolving skill set and deepens my understanding of computer science principles.
-      </p>
+      
+      <div className="text-center mt-20 max-w-2xl mx-auto glass-card p-6 border-white/5">
+        <p className="text-white/40 italic text-sm leading-relaxed">
+          "Each experience, whether a corporate internship or a personal project, contributes to my evolving technical arsenal."
+        </p>
+      </div>
     </SectionWrapper>
   );
 };

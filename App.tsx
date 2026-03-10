@@ -11,9 +11,17 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-gray-900 text-gray-100 min-h-screen">
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Ambient Background Layers */}
+      <div className="fixed inset-0 z-[-1] bg-[#030014]">
+        {/* Violet Glow */}
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-violet-600/10 blur-[120px]" />
+        {/* Cyan Glow */}
+        <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-cyan-600/10 blur-[120px]" />
+      </div>
+
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <section id="home">
           <Hero />
         </section>

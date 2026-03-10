@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
@@ -6,6 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
   target?: string;
   rel?: string;
+  className?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,26 +16,44 @@ const Button: React.FC<ButtonProps> = ({
   href,
   target,
   rel,
+  className = '',
   ...props
 }) => {
-  const baseClasses = 'px-6 py-3 rounded-md text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 shadow-lg';
-  const primaryClasses = 'bg-green-500 text-gray-900 hover:bg-green-600';
-  const secondaryClasses = 'bg-blue-600 text-white hover:bg-blue-700 border border-blue-600';
+  const baseClasses = 'inline-flex items-center justify-center px-8 py-3 rounded-full font-space font-semibold tracking-wide transition-all duration-500 active:scale-95 disabled:opacity-50 shadow-lg cursor-pointer';
+  
+  const primaryClasses = 'bg-cyan-500 text-midnight hover:bg-white hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]';
+  const secondaryClasses = 'bg-white/5 text-white border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20';
 
-  const classes = `${baseClasses} ${variant === 'primary' ? primaryClasses : secondaryClasses}`;
+  const classes = `${baseClasses} ${variant === 'primary' ? primaryClasses : secondaryClasses} ${className}`;
+
+  const motionProps = {
+    whileHover: { scale: 1.05 },
+    whileTap: { scale: 0.95 },
+  };
 
   if (href) {
     return (
-      <a href={href} target={target} rel={rel} className={classes} aria-label={typeof children === 'string' ? children : 'Action button'}>
+      <motion.a 
+        {...motionProps}
+        href={href} 
+        target={target} 
+        rel={rel} 
+        className={classes} 
+        aria-label={typeof children === 'string' ? children : 'Action button'}
+      >
         {children}
-      </a>
+      </motion.a>
     );
   }
 
   return (
-    <button className={classes} {...props}>
+    <motion.button 
+      {...motionProps}
+      className={classes} 
+      {...props}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 };
 

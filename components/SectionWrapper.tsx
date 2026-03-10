@@ -1,35 +1,43 @@
 import React from 'react';
-// Removed motion, MotionProps from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface SectionWrapperProps {
   id: string;
   title: string;
   children: React.ReactNode;
-  isFirstSection?: boolean; // New prop to identify the Hero section
+  isFirstSection?: boolean;
 }
 
 const SectionWrapper: React.FC<SectionWrapperProps> = ({ id, title, children, isFirstSection = false }) => {
-  // Removed Framer Motion props logic
-
-  const baseClasses = `px-4 md:px-8 lg:px-12 max-w-7xl mx-auto`;
-
-  // Specific classes for the first section to handle fixed navbar offset
-  // and other sections for general styling and scroll-in animation
+  const baseClasses = `px-6 md:px-12 max-w-7xl mx-auto`;
   const sectionSpecificClasses = isFirstSection
-    ? `pt-[var(--navbar-height)] scroll-mt-[var(--navbar-height)]` // Add padding-top and scroll-margin-top
-    : `py-16 min-h-screen flex flex-col justify-center`; // Default for other sections
+    ? `pt-32 pb-20`
+    : `py-24 min-h-[80vh] flex flex-col justify-center`;
 
   return (
-    <section
-      id={id}
-      className={`${baseClasses} ${sectionSpecificClasses}`}
-    >
-      {!isFirstSection && ( // Only render title for non-hero sections
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-green-400">
-          {title}
-        </h2>
+    <section id={id} className={`${baseClasses} ${sectionSpecificClasses} relative z-10`}>
+      {!isFirstSection && (
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-16 text-center"
+        >
+          <h2 className="text-4xl md:text-6xl font-space font-bold text-white inline-block relative">
+            {title}
+            <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-gradient-to-r from-cyan-500 to-violet-600 rounded-full" />
+          </h2>
+        </motion.div>
       )}
-      {children}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+      >
+        {children}
+      </motion.div>
     </section>
   );
 };

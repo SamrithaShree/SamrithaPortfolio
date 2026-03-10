@@ -1,28 +1,27 @@
 import React from 'react';
 import { IconType } from 'react-icons';
-// Removed motion from 'framer-motion';
 
 interface SkillCardProps {
   name: string;
-  icon: IconType | string; // Can be a React Icon component or an emoji string
+  icon: IconType | string;
 }
 
 const SkillCard: React.FC<SkillCardProps> = ({ name, icon }) => {
   return (
-    <div
-      className="bg-gray-800 rounded-lg p-6 flex flex-col items-center text-center shadow-md border border-gray-700
-                 hover:bg-gray-700 hover:border-green-400 transition-all duration-300 ease-in-out transform hover:scale-105"
-      // Removed whileHover prop
-    >
-      <div className="text-4xl mb-3 text-green-400">
-        {/* Fix: Correctly render IconType component or string/emoji */}
+    <div className="group relative glass-card p-6 flex flex-col items-center justify-center transition-all duration-500 hover:-translate-y-1 hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)]">
+      {/* Icon */}
+      <div className="text-3xl mb-4 text-white/70 group-hover:text-cyan-400 group-hover:scale-110 transition-all duration-500">
         {typeof icon === 'string' ? (
-          <span className="text-5xl">{icon}</span>
+          <span className="text-4xl">{icon}</span>
         ) : (
           React.createElement(icon)
         )}
       </div>
-      <p className="text-lg font-semibold text-gray-100">{name}</p>
+      
+      {/* Name */}
+      <p className="text-sm font-space font-medium tracking-wide text-white/50 group-hover:text-white transition-colors">
+        {name}
+      </p>
     </div>
   );
 };
