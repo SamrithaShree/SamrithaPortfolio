@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionWrapper from './SectionWrapper';
 import { Github, Code2, Trophy, Flame } from 'lucide-react';
 import Button from './Button';
@@ -6,6 +6,40 @@ import Button from './Button';
 const CompetitiveProgramming: React.FC = () => {
   const leetcodeProfileUrl = 'https://leetcode.com/samrithashree/';
   const githubProfileUrl = 'https://github.com/SamrithaShree';
+
+  const [stats, setStats] = useState({
+    totalSolved: 284,
+    easySolved: 173,
+    mediumSolved: 92,
+    hardSolved: 19,
+    streak: 39, // Streak is harder to fetch reliably via public API, keeping as baseline
+    loading: true
+  });
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const response = await fetch('https://alfa-leetcode-api.onrender.com/userProfile/samrithashree');
+        const data = await response.json();
+        
+        if (data) {
+          setStats(prev => ({
+            ...prev,
+            totalSolved: data.totalSolved || prev.totalSolved,
+            easySolved: data.easySolved || prev.easySolved,
+            mediumSolved: data.mediumSolved || prev.mediumSolved,
+            hardSolved: data.hardSolved || prev.hardSolved,
+            loading: false
+          }));
+        }
+      } catch (error) {
+        console.error('Failed to fetch LeetCode stats:', error);
+        setStats(prev => ({ ...prev, loading: false }));
+      }
+    };
+
+    fetchStats();
+  }, []);
 
   return (
     <SectionWrapper id="competitive-programming" title="Algorithm Mastery">
@@ -18,7 +52,9 @@ const CompetitiveProgramming: React.FC = () => {
               <Code2 size={24} />
             </div>
             <h4 className="text-xs font-space font-bold text-white/30 uppercase tracking-widest mb-2">Total Solved</h4>
-            <p className="text-4xl font-space font-bold text-white">219+</p>
+            <p className="text-4xl font-space font-bold text-white">
+              {stats.loading ? '...' : `${stats.totalSolved}+`}
+            </p>
           </div>
 
           <div className="glass-card p-8 border-white/5 group hover:border-violet-500/30 transition-all">
@@ -27,9 +63,9 @@ const CompetitiveProgramming: React.FC = () => {
             </div>
             <h4 className="text-xs font-space font-bold text-white/30 uppercase tracking-widest mb-2">Proficiency</h4>
             <div className="flex flex-col gap-1">
-              <p className="text-sm font-medium text-white/60">Easy: <span className="text-cyan-400">137</span></p>
-              <p className="text-sm font-medium text-white/60">Medium: <span className="text-violet-400">65</span></p>
-              <p className="text-sm font-medium text-white/60">Hard: <span className="text-rose-400">17</span></p>
+              <p className="text-sm font-medium text-white/60">Easy: <span className="text-cyan-400">{stats.loading ? '...' : stats.easySolved}</span></p>
+              <p className="text-sm font-medium text-white/60">Medium: <span className="text-violet-400">{stats.loading ? '...' : stats.mediumSolved}</span></p>
+              <p className="text-sm font-medium text-white/60">Hard: <span className="text-rose-400">{stats.loading ? '...' : stats.hardSolved}</span></p>
             </div>
           </div>
 
@@ -38,7 +74,9 @@ const CompetitiveProgramming: React.FC = () => {
               <Flame size={24} />
             </div>
             <h4 className="text-xs font-space font-bold text-white/30 uppercase tracking-widest mb-2">Best Streak</h4>
-            <p className="text-4xl font-space font-bold text-white">39 Days</p>
+            <p className="text-4xl font-space font-bold text-white">
+              {stats.streak} Days
+            </p>
           </div>
         </div>
 
