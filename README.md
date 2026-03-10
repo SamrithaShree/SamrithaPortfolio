@@ -53,33 +53,32 @@
 ## Project Structure
 
 ```
-SamrithaPortfolio/
+Portfolio/
 ├── public/
 │   └── projects/          # Project screenshots
-├── src/
-│   ├── components/
-│   │   ├── About.tsx          # About section
-│   │   ├── CompetitiveProgramming.tsx
-│   │   ├── Contact.tsx        # Contact form with EmailJS
-│   │   ├── Experience.tsx     # Timeline of internships
-│   │   ├── Footer.tsx         # Footer with social links
-│   │   ├── Hero.tsx           # Hero section with animations
-│   │   ├── Navbar.tsx         # Responsive navigation
-│   │   ├── ProjectCard.tsx    # Reusable project card
-│   │   ├── Projects.tsx       # Projects showcase
-│   │   ├── Skills.tsx         # Skills grid
-│   │   ├── SkillCard.tsx      # Individual skill component
-│   │   ├── SocialIcons.tsx    # Social media links
-│   │   ├── SectionWrapper.tsx # HOC for sections
-│   │   ├── TimelineItem.tsx   # Experience timeline item
-│   │   └── Button.tsx         # Reusable button component
-│   ├── constants.ts       # Data constants (projects, skills, etc.)
-│   ├── App.tsx           # Main app component
-│   ├── index.tsx         # Entry point
-│   └── index.css         # Global styles
+├── components/
+│   ├── About.tsx          # About section
+│   ├── CompetitiveProgramming.tsx
+│   ├── Contact.tsx        # Contact form with EmailJS
+│   ├── Experience.tsx     # Animated Timeline section
+│   ├── Footer.tsx         # Footer with social links
+│   ├── Hero.tsx           # Hero section with animations
+│   ├── Navbar.tsx         # Responsive navigation
+│   ├── ProjectCard.tsx    # Reusable project card
+│   ├── Projects.tsx       # Projects showcase
+│   ├── Skills.tsx         # Skills grid
+│   ├── SkillCard.tsx      # Individual skill component
+│   ├── SocialIcons.tsx    # Social media links
+│   ├── SectionWrapper.tsx # HOC for sections
+│   └── Button.tsx         # Reusable button component
+├── assets/                # Images and media
+├── constants.ts           # Data constants (projects, skills, etc.)
+├── App.tsx                # Main app component
+├── index.tsx              # Entry point
+├── index.css              # Global styles
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml    # CI/CD pipeline configuration
+│       └── deploy.yml     # CI/CD pipeline configuration
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
