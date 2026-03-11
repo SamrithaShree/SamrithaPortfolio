@@ -67,7 +67,8 @@ Portfolio/
 │   ├── ProjectCard.tsx    # Reusable project card
 │   ├── Projects.tsx       # Projects showcase
 │   ├── Skills.tsx         # Skills grid
-│   ├── SkillCard.tsx      # Individual skill component
+│   ├── PhysicsPool.tsx    # Matter.js Physics Pool for Skills
+│   ├── PhysicsNode.tsx    # Interactive physics skill node
 │   ├── SocialIcons.tsx    # Social media links
 │   ├── SectionWrapper.tsx # HOC for sections
 │   └── Button.tsx         # Reusable button component
