@@ -1,8 +1,8 @@
-# Senior DevOps Portfolio Architecture 🚀
+# Senior DevOps Portfolio Architecture 
 
 <div align="center">
 
-[![Live Production](https://img.shields.io/badge/Live-Production-00c1d4?style=for-the-badge&logo=googledomains&logoColor=white)](https://samrithashree.io)
+[![Live Production](https://img.shields.io/badge/Live-Production-00c1d4?style=for-the-badge&logo=googledomains&logoColor=white)](https://samrithashree.github.io)
 [![CI/CD Pipeline](https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/SamrithaShree/SamrithaPortfolio/actions)
 [![Global CDN](https://img.shields.io/badge/CloudFront-Edge%20Caching-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/cloudfront/)
 [![SSL/TLS](https://img.shields.io/badge/Security-SSL/TLS-brightgreen?style=for-the-badge&logo=lets-encrypt&logoColor=white)](https://samrithashree.io)
