@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const },
     },
   };
 
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </span>
-              <span className="text-[10px] font-space font-bold text-cyan-100/80 tracking-widest uppercase">Open for Internships</span>
+              <span className="text-[10px] font-space font-bold text-cyan-100/80 tracking-widest uppercase">Currently Working & Building</span>
             </div>
           </motion.div>
 
@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
           <motion.p variants={itemVariants} className="text-lg text-white/40 mb-12 max-w-lg leading-relaxed">
             Focused on building efficient cloud-native applications and exploring the integration of AI in modern software lifecycles.
             <span className="block mt-4 text-white/20 text-sm font-space">
-              Previously at Caplin Point Labs & Valeo India.
+              Currently AI Associate at Adiuvo Diagnostics. Previously at Caplin Point Labs & Valeo India.
             </span>
           </motion.p>
 

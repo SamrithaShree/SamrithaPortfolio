@@ -124,6 +124,34 @@ export const SKILLS = {
 // --- Projects Section ---
 export const PROJECTS = [
   {
+    title: 'Movie Recommender System (MovieLens 1M)',
+    description: 'Solo-built and evaluated SVD matrix factorization and PyTorch Neural Collaborative Filtering (NCF) against popularity & random baselines on ~995K ratings (6,040 users, 3,043 movies). Optimized ranking metrics (Precision@10, Recall@10, NDCG@10) where SVD achieved ~202% Precision@10 improvement over random baseline.',
+    image: '/projects/MovieRecommender.png',
+    techStack: ['PyTorch', 'Python', 'RecSys', 'SVD', 'NCF', 'MovieLens'],
+    githubLink: 'https://github.com/SamrithaShree/netflix-recsys'
+  },
+  {
+    title: 'CiviCore – Modular Smart-City Platform',
+    description: 'Ranked 18th on cross-track leaderboard in 24-hr TetherX Hackathon (CodeChef VIT Chennai). Engineered a modular smart-city operations backend managing civic incidents, automated SLA tracking via 3 cron workers, geospatial routing, RBAC governance, and real-time threat monitoring.',
+    image: '/projects/CiviCore.png',
+    techStack: ['Node.js', 'Express', 'PostgreSQL', 'React', 'Cron Workers', 'RBAC'],
+    githubLink: 'https://github.com/SamrithaShree/civicore'
+  },
+  {
+    title: 'NAAM – Bilingual Civic Agricultural Platform',
+    description: 'Bilingual freelance platform connecting farmers, volunteers, and investors within the farming community. Features localized routing, accessibility controls, keyboard-navigable search across 9+ pages and 16 URLs, and automated Vitest/RTL test suites. Live in active production.',
+    image: '/projects/NAAM.png',
+    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vitest', 'Vercel', 'Cloudflare'],
+    githubLink: 'https://www.naamfarmers.org'
+  },
+  {
+    title: 'Elite Intel – Web Analytics Platform',
+    description: 'Responsive frontend web application for real-time intelligence analytics. Built with interactive visual components, dynamic dark-mode glassmorphism design system, high-performance data streams, and seamless navigation.',
+    image: '/projects/EliteIntel.png',
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    githubLink: 'https://eliteintel.vercel.app'
+  },
+  {
     title: 'Digital Learning Platform for Rural Education',
     description: 'Full-stack Progressive Web App for Smart India Hackathon 2025. Provides offline-first education for rural students with multilingual support (3 languages) and intelligent caching.',
     image: '/projects/DigitalLearning.png',
@@ -163,23 +191,35 @@ export const PROJECTS = [
 // --- Experience/Learning Section ---
 export const EXPERIENCE_TIMELINE = [
   {
-  title: 'Caplin Point Laboratories - Cloud Engineering Intern',
-  mode: 'Onsite',
-  date: 'December 2025',
-  description: 'Implemented CI/CD pipelines using GitHub Actions to automate portfolio deployment to AWS S3 and GitHub Pages, reducing deployment time by 80%. Deployed and configured AWS EC2 instances with secure SFTP file transfers using FileZilla and CLI tools. Gained hands-on experience with DevOps practices including AWS cloud services, version control integration, and infrastructure automation.',
-},
+    title: 'Adiuvo Diagnostics - Part-time AI Associate',
+    mode: 'Hybrid',
+    date: 'July 2026 - Present',
+    description: 'Retained following AI internship to engineer NIR clinical oxygenation mapping pipelines (fine-tuned SegFormer segmentation & XGBoost physics-delta correction on 1,700+ images) and solo-build an automated Firebase inventory management dashboard in active production use.',
+  },
   {
-  title: 'Valeo India Pvt Ltd - Information Systems Intern',
-  mode: 'Onsite',
-  date: 'June 2025 - July 2025',
-  description: 'Developed automation tools using Google Apps Script to streamline workflows, including an auto-email sender and calendar event generator. Created an interactive training module on Google Looker Studio for 50 users, improving training efficiency by 40%. Completed certifications in AppSheet for no-code development and RPA with Automation Anywhere.',
-},
-{
-  title: 'NetworkGeek - Data Science Intern',
-  mode: 'Remote',
-  date: 'June 2025 - July 2025',
-  description: 'Secured 1st place on Public Leaderboard and 2nd place on Private Leaderboard in a Kaggle Customer Churn Prediction competition. Built machine learning models including Neural Networks and Transformers using Python, NumPy, Pandas, and Scikit-learn on datasets with 10,000+ records.',
-},
+    title: 'Adiuvo Diagnostics - AI Intern',
+    mode: 'Onsite',
+    date: 'May 2026 - June 2026',
+    description: 'Built a 3-class bioburden sterility classifier from raw time-of-flight sensor data for Raspberry Pi devices. Extracted custom wave features via deconvolution & mathematical curve-fitting, training a Random Forest model achieving 88% accuracy (+18% over physics baseline).',
+  },
+  {
+    title: 'Caplin Point Laboratories - Cloud Engineering Intern',
+    mode: 'Onsite',
+    date: 'December 2025',
+    description: 'Implemented CI/CD pipelines using GitHub Actions to automate portfolio deployment to AWS S3 and GitHub Pages, reducing deployment time by 80%. Deployed and configured AWS EC2 instances with secure SFTP file transfers using FileZilla and CLI tools. Gained hands-on experience with DevOps practices including AWS cloud services, version control integration, and infrastructure automation.',
+  },
+  {
+    title: 'Valeo India Pvt Ltd - Information Systems Intern',
+    mode: 'Onsite',
+    date: 'June 2025 - July 2025',
+    description: 'Developed automation tools using Google Apps Script to streamline workflows, including an auto-email sender and calendar event generator. Created an interactive training module on Google Looker Studio for 50 users, improving training efficiency by 40%. Completed certifications in AppSheet for no-code development and RPA with Automation Anywhere.',
+  },
+  {
+    title: 'NetworkGeek - Data Science Intern',
+    mode: 'Remote',
+    date: 'June 2025 - July 2025',
+    description: 'Secured 1st place on Public Leaderboard and 2nd place on Private Leaderboard in a Kaggle Customer Churn Prediction competition. Built machine learning models including Neural Networks and Transformers using Python, NumPy, Pandas, and Scikit-learn on datasets with 10,000+ records.',
+  },
 ];
 
 // --- Contact Section ---
