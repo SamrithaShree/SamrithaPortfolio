@@ -9,7 +9,7 @@
 
 **An enterprise-grade, high-performance static portfolio architected for global scalability, automated delivery, and maximum security.**
 
-[View Live Site](https://samrithashree.io) • [Architecture Docs](#system-architecture) • [Performance Metrics](#performance)
+[View Live Site](https://samrithashree.github.io) • [Architecture Docs](#system-architecture) • [Performance Metrics](#performance)
 
 </div>
 
